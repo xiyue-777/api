@@ -1,0 +1,13 @@
+name = "monet-chat-api"
+main = "workers.js"
+compatibility_date = "2025-11-15"
+
+# KV 命名空间配置
+[[kv_namespaces]]
+binding = "CHAT_DATA"
+id = "" # 部署后会自动填充
+preview_id = "" # 部署后会自动填充
+
+# 定时触发器配置 - 每小时检查一次
+[[triggers]]
+cron = "0 * * * *" # 每小时执行一次
